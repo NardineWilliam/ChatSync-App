@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enter Your Name</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+      body {
+        background-image: url("https://free4kwallpapers.com/uploads/originals/2015/08/24/blue-green-abstract-background.jpg");
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+      }
+
+      .form-group {
+        text-align: center;
+        width: 300px;
+      }
+
+      .btn-primary {
+        color: white;
+        width: 100%;
+        font-size: 20px;
+        padding: 8px;
+      }
+
+      .form-control {
+        font-size: 15px;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 20px;
+        color: rgb(5, 55, 40);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="chat.html" method="get">
+        <div class="form-group">
+          <label for="username"><h1 text-primary>Username</h1></label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+            autofocus />
+        </div>
+        <button type="submit" class="btn btn-primary">Join Chat</button>
+      </form>
+    </div>
+
+    <script>
+      document.getElementById("username").focus();
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.querySelector("form").submit();
+        }
+      });
+    </script>
+  </body>
+</html>
