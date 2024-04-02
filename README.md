@@ -1,7 +1,7 @@
 # ChatSync App
 
 [Live Demo](https://chatsync-production.up.railway.app/)
-
+![Screenshot](ChatSync.png)
 A real-time messaging application built with Node.js, Express.js, and Socket.IO.
 
 ## Description
